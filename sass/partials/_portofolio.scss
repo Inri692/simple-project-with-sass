@@ -33,19 +33,23 @@ main .portfolios .main-portfolios .portfolio-list {
 
       background-color: #ffffff77;
       border-radius: 6px;
+      padding: 15px 15px;
 
       scale: 0;
       animation: hover-portfolio-disappear 0.5s ease-in-out;
 
+      .description-product {
+        margin-block: 1rem;
+        font-size: 1.2rem;
+      }
+
       .title {
         margin-block: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
       }
 
       .social-medias {
-        display: flex;
         justify-content: center;
-        gap: 8px;
 
         .social-media-link {
           font-size: 2rem;
@@ -62,7 +66,6 @@ main .portfolios .main-portfolios .portfolio-list {
   }
 }
 
-/* MD: minimum viewport width 768px or above */
 @media screen and (min-width: map.get(var.$breakpoints, "md")) {
   main .portfolios .main-portfolios .portfolio-list {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
@@ -70,14 +73,11 @@ main .portfolios .main-portfolios .portfolio-list {
   }
 }
 
-/* LG: minimum viewport width 992px or above */
 @media screen and (min-width: map.get(var.$breakpoints, "lg")) {
   main .portfolios .main-portfolios .portfolio-list {
     gap: 32px;
   }
 }
-
-/* XL: minimum viewport width 1200px or above */
 @media screen and (min-width: map.get(var.$breakpoints, "xl")) {
   main .portfolios .main-portfolios .portfolio-list {
     grid-template-columns: repeat(3, minmax(100px, 1fr));

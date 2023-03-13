@@ -497,17 +497,20 @@ main .portfolios .main-portfolios .portfolio-list .card .card-body.floating {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.4666666667);
   border-radius: 6px;
+  padding: 15px 15px;
   scale: 0;
   animation: hover-portfolio-disappear 0.5s ease-in-out;
 }
+main .portfolios .main-portfolios .portfolio-list .card .card-body.floating .description-product {
+  margin-block: 1rem;
+  font-size: 1.2rem;
+}
 main .portfolios .main-portfolios .portfolio-list .card .card-body.floating .title {
   margin-block: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 main .portfolios .main-portfolios .portfolio-list .card .card-body.floating .social-medias {
-  display: flex;
   justify-content: center;
-  gap: 8px;
 }
 main .portfolios .main-portfolios .portfolio-list .card .card-body.floating .social-medias .social-media-link {
   font-size: 2rem;
@@ -518,20 +521,17 @@ main .portfolios .main-portfolios .portfolio-list .card:hover .card-body.floatin
   animation: hover-portfolio-appear 0.35s ease-in-out;
 }
 
-/* MD: minimum viewport width 768px or above */
 @media screen and (min-width: 768px) {
   main .portfolios .main-portfolios .portfolio-list {
     grid-template-columns: repeat(2, minmax(100px, 1fr));
     gap: 24px;
   }
 }
-/* LG: minimum viewport width 992px or above */
 @media screen and (min-width: 992px) {
   main .portfolios .main-portfolios .portfolio-list {
     gap: 32px;
   }
 }
-/* XL: minimum viewport width 1200px or above */
 @media screen and (min-width: 1200px) {
   main .portfolios .main-portfolios .portfolio-list {
     grid-template-columns: repeat(3, minmax(100px, 1fr));
@@ -542,18 +542,16 @@ main .portfolios .main-portfolios .portfolio-list .card:hover .card-body.floatin
     flex-direction: row;
   }
 }
-footer {
-  background-color: rgb(0, 0, 0);
-  padding: 15px 15px;
+footer .container {
+  padding: 16px 24px;
+  background-color: black;
+  max-width: 1400px;
+  margin-inline: auto;
 }
-footer footer .copyright {
-  padding: 24px 24px;
-  color: white;
-}
-footer footer .copyright p {
+footer .container p {
   text-align: center;
   line-height: 24px;
-  color: white;
+  color: rgb(233, 132, 198);
 }
 
 button {

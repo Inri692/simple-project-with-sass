@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as var;
+@use "sass:map";
+
+// main .about .section-title {
+//   color: white;
+//   font-weight: 900;
+// }
+main .about .main-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+
+  .photo-profile img {
+    width: 90%;
+    display: block;
+    margin-inline: auto;
+    border-radius: 3em;
+  }
+
+  .description {
+    p {
+      line-height: 20px;
+      font-size: 1.1rem;
+      margin-block-start: 8px;
+      color: white;
+      font-weight: 600;
+      padding-top: 10%;
+    }
+
+    .download-cv {
+      width: 100%;
+      padding: 10px 3rem;
+      margin-block-start: 16px;
+
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (min-width: map.get(var.$breakpoints, "md")) {
+  main .about .main-about {
+    flex-direction: row;
+
+    .photo-profile {
+      flex-basis: 40%;
+    }
+
+    .description {
+      flex-basis: 60%;
+
+      .download-cv {
+        width: fit-content;
+      }
+    }
+  }
+}

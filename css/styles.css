@@ -186,7 +186,7 @@ table {
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: rgb(83, 80, 80);
+  background-color: #393e46;
 }
 
 a {
@@ -233,7 +233,7 @@ main .section .section-title:after {
   box-sizing: content-box;
   height: 14px;
   width: 30px;
-  background-color: rgb(233, 132, 198);
+  background-color: #f96d00;
 }
 
 @media screen and (min-width: 576px) {
@@ -258,7 +258,7 @@ main .section .section-title:after {
 }
 header .navbar {
   padding: 20px 25px;
-  max-width: 1400px;
+  width: 100%;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
@@ -516,7 +516,7 @@ main .portfolios .main-portfolios .portfolio-list .card .card-body.floating .soc
   font-size: 2rem;
 }
 main .portfolios .main-portfolios .portfolio-list .card:hover .card-body.floating {
-  background-color: rgba(255, 255, 255, 0.4666666667);
+  background-color: #f5e9cf;
   scale: 1;
   animation: hover-portfolio-appear 0.35s ease-in-out;
 }
@@ -591,7 +591,7 @@ button.dark-btn:hover {
   display: flex;
   flex-direction: column;
   padding: 24px 8px;
-  border: 1px solid white;
+  border: 1px solid #f96d00;
   background-color: black;
   border-radius: 6px;
   transition: 0.25s ease-in-out;

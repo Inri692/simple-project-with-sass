@@ -1,5 +1,27 @@
 @use "../abstracts/variables" as var;
 @use "sass:map";
+.contact-area {
+  padding: 25px 35px;
+  align-items: center;
+  padding-left: 40%;
+
+  .social-medias {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    padding-top: 10px;
+  }
+  .social-medias img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+  }
+  .social-medias p {
+    font-size: 20px;
+    padding: 20px 20px;
+    color: white;
+  }
+}
 
 @media screen and (min-width: map.get(var.$breakpoints, "md")) {
   .input-control-dbl {

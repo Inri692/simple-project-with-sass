@@ -537,6 +537,28 @@ main .portfolios .main-portfolios .portfolio-list .card:hover .card-body.floatin
     grid-template-columns: repeat(3, minmax(100px, 1fr));
   }
 }
+.contact-area {
+  padding: 25px 35px;
+  align-items: center;
+  padding-left: 40%;
+}
+.contact-area .social-medias {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  padding-top: 10px;
+}
+.contact-area .social-medias img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+}
+.contact-area .social-medias p {
+  font-size: 20px;
+  padding: 20px 20px;
+  color: white;
+}
+
 @media screen and (min-width: 768px) {
   .input-control-dbl {
     flex-direction: row;
